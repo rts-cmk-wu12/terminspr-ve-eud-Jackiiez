@@ -1,5 +1,5 @@
 import Aktivitet from "@/componets/ui/footer/aktiviter";
-
+import "./aktiviteter.scss"
 export const metadata={
     title:"home"
 }
@@ -11,12 +11,13 @@ export default async function Home() {
      return (
 
     <>
+     <h2 className="aktiviteter-heading">Aktiviteter</h2>
       {json.map(kageperson =>
 
-        <li key={kageperson.id}>
+        <div key={kageperson.id}>
           {/* vi henter vores kort hvor vi har en property som hedder "kageperson" og giver den det samme parameter så vi viser alt indholdet fra kortet */}
           <Aktivitet kageperson={kageperson} />
-        </li>)}
+        </div>)}
     </>
   );
 }

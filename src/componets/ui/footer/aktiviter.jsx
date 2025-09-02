@@ -1,20 +1,28 @@
-import { formatCurrency } from "@/util/currency";
+// import { formatCurrency } from "@/util/currency";
+import Image from "next/image";
 import Link from "next/link";
-export const metadata={
-    title:"Hjem"
+export const metadata = {
+    title: "Hjem"
 }
-export default async function Aktiviter({kageperson}) {
+export default async function Aktiviter({ kageperson }) {
 
- return(
+    return (
         //vi klikker på linket så går ind i mappen kageperson/[kageslug] (som er "slug" i json filen(vi ku ogs hente id og vise ting ud fra det på details))
-           <Link href={`/`}>
-            <article>
-                <h2>
-                    {kageperson.name}
-                    <Image src={kageperson.asset.url}  alt="" width="430" height="500" quality={100} ></Image>
-                </h2>
+        <>
+       
+            <article className="aktiviteter"><Link href={`/aktiviteter/${kageperson.name}`}>
+              
+                
+                <div>
+                    <h3>
+                        {kageperson.name}
 
-            </article>
-        </Link>
+
+                    </h3>
+                    <p>{kageperson.minAge} - {kageperson.maxAge} år </p>
+                </div>
+                <Image src={kageperson.asset.url} alt="" width="430" height="360" quality={100} ></Image> </Link>
+            </article></>
+       
     )
 } 
