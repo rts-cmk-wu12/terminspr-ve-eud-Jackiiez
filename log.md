@@ -18,7 +18,7 @@ Eftermiddag - 16:00
 
 ## Dag 3
 
-Morgen - (tidspunkt)  
+Morgen - (13:31)  
 Eftermiddag - (tidspunkt)
 
 ## Dag 4
