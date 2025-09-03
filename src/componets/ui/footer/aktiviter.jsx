@@ -10,7 +10,7 @@ export default async function Aktiviter({ kageperson }) {
         //vi klikker på linket så går ind i mappen kageperson/[kageslug] (som er "slug" i json filen(vi ku ogs hente id og vise ting ud fra det på details))
         <>
        
-            <article className="aktiviteter"><Link href={`/aktiviteter/${kageperson.name}`}>
+            <article className="aktiviteter"><Link href={`/aktiviteter/${kageperson.id}`}>
               
                 
                 <div>
@@ -19,7 +19,7 @@ export default async function Aktiviter({ kageperson }) {
 
 
                     </h3>
-                    <p>{kageperson.minAge} - {kageperson.maxAge} år </p>
+                    <p>{kageperson.minAge} - {kageperson.maxAge} år </p> <p>{kageperson.weekday}</p>
                 </div>
                 <Image src={kageperson.asset.url} alt="" width="430" height="360" quality={100} ></Image> </Link>
             </article></>
