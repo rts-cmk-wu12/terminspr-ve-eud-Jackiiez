@@ -3,6 +3,9 @@ import "./aktiviteter.scss"
 export const metadata={
     title:"home"
 }
+
+
+
 export default async function Home() {
 
   const response = await fetch("http://localhost:4000/api/v1/activities");
