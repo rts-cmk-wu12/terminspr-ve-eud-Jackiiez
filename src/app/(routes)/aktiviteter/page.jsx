@@ -1,4 +1,4 @@
-import Aktivitet from "@/componets/ui/footer/aktiviter";
+import Aktivitet from "@/componets/ui/aktiviteter";
 import "./aktiviteter.scss"
 export const metadata={
     title:"home"
