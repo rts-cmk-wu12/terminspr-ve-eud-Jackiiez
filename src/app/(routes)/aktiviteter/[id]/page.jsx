@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "../aktiviteter.scss"
 
-export default async function KageDetails({ params }) {
+export default async function AktiviterDetails({ params }) {
   const { id } = await params;
   console.log(id)
   const response = await fetch(`http://localhost:4000/api/v1/activities`)
