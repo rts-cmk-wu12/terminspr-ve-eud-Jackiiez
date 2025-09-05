@@ -6,8 +6,8 @@ import "./globals.css";
 
 export const metadata = {
   title:{
-    template: "%s | Laudrup Dans",
-    default: "Laudrup Dans "
+    template: "%s | Landrup Dans",
+    default: "Landrup Dans "
   },
   description:"Termins prøve WU12"
 

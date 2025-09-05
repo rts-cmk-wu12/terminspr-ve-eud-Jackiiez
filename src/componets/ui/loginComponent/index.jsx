@@ -36,7 +36,7 @@ const password = formData.get("password");
 const firstname = formData.get("firstname");
 const lastname = formData.get("lastname");
 const age = formData.get("age");
-const role = formData.get("role");
+const role = "default";
 
 console.log({username,password,firstname,lastname,age,role})
 
@@ -106,13 +106,7 @@ export default function LoginForm() {
                     <p>{formState?.properties?.age?.errors}</p>
                 </label>
             </div>
-             <div>
-                <label>
-                    <span>Rolle</span>
-                    <input type="text" name="role" />
-                    <p>{formState?.properties?.role?.errors}</p>
-                </label>
-            </div>
+            
 
             <button type="submit">Log ind</button>
             <p>{formState?.errors}</p>
