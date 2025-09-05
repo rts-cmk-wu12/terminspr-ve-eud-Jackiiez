@@ -4,6 +4,7 @@ import doTheLoginThing from "@/actions/dotheloginthing";
 import { useActionState } from "react";
 
 import "./login.scss"
+import { success } from "zod";
 
  
 const override = {
@@ -36,7 +37,14 @@ const password = formData.get("password");
 const firstname = formData.get("firstname");
 const lastname = formData.get("lastname");
 const age = formData.get("age");
-const role = "default";
+const role = formData.get("role");
+
+if(role !== "Default"){
+    return{
+        success: false,
+        errors:["rolle skal være default"],
+    };
+}
 
 console.log({username,password,firstname,lastname,age,role})
 
@@ -106,7 +114,13 @@ export default function LoginForm() {
                     <p>{formState?.properties?.age?.errors}</p>
                 </label>
             </div>
-            
+             <div>
+                <label>
+                    <span>Rolle</span>
+                    <input type="text" name="role" placeholder="Default" />
+                    <p>{formState?.properties?.role?.errors}</p>
+                </label>
+            </div>
 
             <button type="submit">Log ind</button>
             <p>{formState?.errors}</p>
