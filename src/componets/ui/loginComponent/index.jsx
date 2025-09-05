@@ -2,7 +2,7 @@
  
 import doTheLoginThing from "@/actions/dotheloginthing";
 import { useActionState } from "react";
-import { CircleLoader } from "react-spinners";
+
 import "./login.scss"
 
  
@@ -66,12 +66,7 @@ export default function LoginForm() {
     const [formState, formAction, isPending] = useActionState(handleRegister);
  
     return isPending ? (
-        <CircleLoader
-            color="#0d0d7cff"
-            loading={true}
-            cssOverride={override}
-            size={100}
-        />
+    <>loading</>
     ) : (
 
         
