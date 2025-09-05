@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "../velkommen.scss"
 
-import LoginForm from "@/componets/ui/footer/loginComponent";
+import LoginForm from "@/componets/ui/loginComponent";
 
 //login page
 export default function login() {
