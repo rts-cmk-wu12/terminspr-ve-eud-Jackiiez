@@ -10,7 +10,7 @@ export default function Footer() {
         
         <Link href={"/"}><li><IoHomeOutline /></li></Link>
        <Link href={"/search"}> <li><CiSearch /></li></Link>
-       <Link href={"/calendar"}> <li><CiCalendar /></li></Link>
+       <Link href={"/"}> <li><CiCalendar /></li></Link>
     </ul>
    </footer>
   );
