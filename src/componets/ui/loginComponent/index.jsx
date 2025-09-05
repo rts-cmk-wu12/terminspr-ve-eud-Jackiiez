@@ -1,5 +1,5 @@
 "use client";
- 
+ //kode brugt fra tidlere projekt stackoverflow, hjælp af venner og youtube
 import doTheLoginThing from "@/actions/dotheloginthing";
 import { useActionState } from "react";
 

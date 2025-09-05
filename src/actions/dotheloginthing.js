@@ -1,6 +1,6 @@
 "use server";
 
-
+//kode brugt fra tidlere projekt og youtube videoer og stackoverflow
 
 
 //side til at validere og lave cookies så sessionen husker at vi er logget ind
